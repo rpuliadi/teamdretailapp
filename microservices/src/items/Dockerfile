@@ -25,5 +25,5 @@ ADD . /app
 # of the Foreman process manager. $PROCESSES is set in the pod manifest
 # to control which processes Honcho will start.
 EXPOSE 8081
-# CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 main:app
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 main:app
 #CMD exec gunicorn --bind :$PORT
